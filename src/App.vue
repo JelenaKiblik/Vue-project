@@ -26,7 +26,7 @@
         @click="drawer = !drawer"
         class="hidden-md-and-up"
       ></v-toolbar-side-icon>
-      <v-toolbar-title>Application</v-toolbar-title>
+      <v-toolbar-title>Ad application</v-toolbar-title>
       <v-spacer></v-spacer>
       <v-toolbar-items class="hidden-sm-and-down">
         <v-btn
@@ -49,17 +49,18 @@
 </template>
 
 <script>
-export default {
-  data () {
-    return {
-      drawer: false,
-      links: [
-        {title: 'Login', icon: 'lock', url: '/login'},
-        {title: 'Registration', icon: 'face', url: '/registration'},
-        {title: 'New', icon: 'note_add', url: '/new'},
-        {title: 'My', icon: 'list', url: '/list'}
-      ]
+  export default {
+    data () {
+      return {
+        drawer: false,
+        links: [
+          {title: 'Login', icon: 'lock', url: '/login'},
+          {title: 'Registration', icon: 'face', url: '/registration'},
+          {title: 'Orders', icon: 'bookmark_border', url: '/orders'},
+          {title: 'New ad', icon: 'note_add', url: '/new'},
+          {title: 'My ads', icon: 'list', url: '/list'}
+        ]
+      }
     }
   }
-}
 </script>
