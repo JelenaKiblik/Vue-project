@@ -1,12 +1,12 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '@/components/Home'
-import Ad from '@/components/Ads/Ad'
-import AdList from '@/components/Ads/AdList'
-import NewAd from '@/components/Ads/NewAd'
+import WaterShow from '@/components/WaterShows/WaterShow'
+import WaterShowList from '@/components/WaterShows/WaterShowList'
+import NewWaterShow from '@/components/WaterShows/NewWaterShow'
 import Login from '@/components/Auth/Login'
 import Registration from '@/components/Auth/Registration'
-import Orders from '@/components/User/Orders'
+import MyAddresses from '@/components/User/MyAddresses'
 
 Vue.use(Router)
 
@@ -18,19 +18,19 @@ export default new Router({
       component: Home
     },
     {
-      path: '/ad/:id',
-      name: 'ad',
-      component: Ad
+      path: '/show/:id',
+      name: 'show',
+      component: WaterShow
     },
     {
       path: '/list',
       name: 'list',
-      component: AdList
+      component: WaterShowList
     },
     {
       path: '/new',
-      name: 'newAd',
-      component: NewAd
+      name: 'newWaterShow',
+      component: NewWaterShow
     },
     {
       path: '/login',
@@ -43,9 +43,9 @@ export default new Router({
       component: Registration
     },
     {
-      path: '/orders',
-      name: 'orders',
-      component: Orders
+      path: '/addresses',
+      name: 'addresses',
+      component: MyAddresses
     }
   ],
   mode: 'history'

@@ -26,7 +26,7 @@
         @click="drawer = !drawer"
         class="hidden-md-and-up"
       ></v-toolbar-side-icon>
-      <v-toolbar-title>Ad application</v-toolbar-title>
+      <v-toolbar-title>Water show application</v-toolbar-title>
       <v-spacer></v-spacer>
       <v-toolbar-items class="hidden-sm-and-down">
         <v-btn
@@ -56,9 +56,9 @@
         links: [
           {title: 'Login', icon: 'lock', url: '/login'},
           {title: 'Registration', icon: 'face', url: '/registration'},
-          {title: 'Orders', icon: 'bookmark_border', url: '/orders'},
-          {title: 'New ad', icon: 'note_add', url: '/new'},
-          {title: 'My ads', icon: 'list', url: '/list'}
+          {title: 'My addresses', icon: 'bookmark_border', url: '/addresses'},
+          {title: 'New show', icon: 'note_add', url: '/new'},
+          {title: 'My shows', icon: 'list', url: '/list'}
         ]
       }
     }

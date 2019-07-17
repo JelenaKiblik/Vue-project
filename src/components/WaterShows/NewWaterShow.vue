@@ -2,7 +2,7 @@
   <v-container>
     <v-layout row>
       <v-flex xs12>
-        <h1>NewAd</h1>
+        <h1>New</h1>
       </v-flex>
     </v-layout>
   </v-container>

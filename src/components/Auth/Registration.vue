@@ -87,7 +87,7 @@
       }
     }
   }
-</script>ipt>
+</script>
 
 <style scoped>
 

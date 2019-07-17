@@ -2,7 +2,7 @@
   <v-container>
     <v-layout row>
       <v-flex xs12>
-        <h1>Orders</h1>
+        <h1>Water Show</h1>
       </v-flex>
     </v-layout>
   </v-container>
