@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
+import AuthGuard from './auth-guard'
 import Home from '@/components/Home'
 import WaterShow from '@/components/WaterShows/WaterShow'
 import WaterShowList from '@/components/WaterShows/WaterShowList'
@@ -19,18 +20,21 @@ export default new Router({
     },
     {
       path: '/show/:id',
+      props: true,
       name: 'show',
       component: WaterShow
     },
     {
       path: '/list',
       name: 'list',
-      component: WaterShowList
+      component: WaterShowList,
+      beforeEnter: AuthGuard
     },
     {
       path: '/new',
       name: 'newWaterShow',
-      component: NewWaterShow
+      component: NewWaterShow,
+      beforeEnter: AuthGuard
     },
     {
       path: '/login',
@@ -45,7 +49,8 @@ export default new Router({
     {
       path: '/addresses',
       name: 'addresses',
-      component: MyAddresses
+      component: MyAddresses,
+      beforeEnter: AuthGuard
     }
   ],
   mode: 'history'
